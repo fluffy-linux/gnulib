@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Compare the two halves (user and group) of idcache.c.
 # Once xformed, they'd better be the same:
 

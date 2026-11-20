@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 #! -*-perl-*-
 
 # Convert git log output to ChangeLog format.

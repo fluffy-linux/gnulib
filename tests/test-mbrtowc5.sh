@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Test whether the POSIX locale has encoding errors.
 LC_ALL=C \
 ${CHECKER} ./test-mbrtowc${EXEEXT} 5 || exit
