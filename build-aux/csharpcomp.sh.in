@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Compile a C# program.
 
 # Copyright (C) 2003-2025 Free Software Foundation, Inc.

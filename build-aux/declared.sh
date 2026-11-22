@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 #
 # Copyright (C) 2006-2025 Free Software Foundation, Inc.
 #

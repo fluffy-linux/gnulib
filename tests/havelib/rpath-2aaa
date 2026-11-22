@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test config.rpath and AC_LIB_LINKFLAGS macro.
 # With dependencies: a static library depending on a static library.

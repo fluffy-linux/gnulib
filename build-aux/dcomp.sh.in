@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Compile a D program, library, or compilation unit.
 
 # Copyright (C) 2025 Free Software Foundation, Inc.
