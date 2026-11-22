@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Convenience script for fetching auxiliary files that are omitted from
 # the version control repository of this package.
 

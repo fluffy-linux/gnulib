@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 . "${srcdir=.}/init.sh"; path_prepend_ .
 
 ${CHECKER} test-string-desc${EXEEXT} test-string-desc-3.tmp > test-string-desc-1.tmp || Exit 1
