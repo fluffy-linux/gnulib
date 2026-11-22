@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Print "Skipping test" if immutability cannot be enforced.
 ./test-immutable${EXEEXT} 0

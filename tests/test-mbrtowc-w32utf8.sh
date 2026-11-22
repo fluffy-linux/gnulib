@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test the UTF-8 environment on native Windows.
 unset LC_ALL

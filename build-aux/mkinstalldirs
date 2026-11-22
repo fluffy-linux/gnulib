@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # mkinstalldirs --- make directory hierarchy
 
 scriptversion=2024-12-03.03; # UTC

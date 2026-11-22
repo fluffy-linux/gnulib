@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Wrapper for compilers on macOS
 # that lose debug information in the final link of an executable.
 scriptversion=2024-05-20.15; # UTC
