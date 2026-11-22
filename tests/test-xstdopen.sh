@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test with all of stdin, stdout, stderr open.
 ${CHECKER} ./test-xstdopen${EXEEXT} || exit 1

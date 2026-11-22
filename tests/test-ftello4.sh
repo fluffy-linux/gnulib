@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 ${CHECKER} ./test-ftello4${EXEEXT} "$srcdir/test-ftello4.sh" || exit 1
 
