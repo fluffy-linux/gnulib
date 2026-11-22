@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/sw/bash/bin/bash -e
 # gendocs.sh -- generate a GNU manual in many formats.  This script is
 #   mentioned in maintain.texi.  See the help message below for usage details.
 

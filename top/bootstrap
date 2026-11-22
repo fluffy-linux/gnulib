@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Bootstrap this package from checked-out sources.
 
 scriptversion=2024-07-04.10; # UTC
