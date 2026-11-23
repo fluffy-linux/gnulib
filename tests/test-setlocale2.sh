@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test locale names with likely unsupported encoding in Unix syntax.
 for name in ar_SA.ISO-8859-1 fr_FR.CP1251 zh_TW.GB18030 zh_CN.BIG5; do

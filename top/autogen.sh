@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Convenience script for regenerating all autogeneratable files that are
 # omitted from the version control repository. In particular, this script
 # also regenerates all aclocal.m4, config.h.in, Makefile.in, configure files

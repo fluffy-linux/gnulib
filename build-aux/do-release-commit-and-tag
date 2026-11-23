@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # In a git/autoconf/automake-enabled project with a NEWS file and a version-
 # controlled .prev-version file, automate the procedure by which we record
 # the date, release-type and version string in the NEWS file.  That commit
