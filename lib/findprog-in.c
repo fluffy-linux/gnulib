@@ -26,6 +26,9 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/stat.h>
+#if !(defined _WIN32 && !defined __CYGWIN__)
+# include <glob.h>
+#endif
 
 #include "filename.h"
 #include "concat-filename.h"
@@ -218,21 +221,40 @@ find_in_given_path (const char *progname, const char *path,
     path = "";
 
   {
-    /* Make a copy, to prepare for destructive modifications.  */
-    char *path_copy = strdup (path);
-    if (path_copy == NULL)
-      return NULL; /* errno is set here */
-
     int failure_errno;
+    char *path_copy = NULL;
     char *path_rest;
-    char *cp;
+    char *cp = NULL;
+#ifdef GLOB_PATHS
+    glob_t pglob;
+    size_t glob_idx = 0;
+    bool use_glob_paths = (directory == NULL);
+    if (use_glob_paths)
+      {
+        memset (&pglob, 0, sizeof pglob);
+        if (glob (path, GLOB_PATHS | GLOB_NOESCAPE | GLOB_NOCHECK,
+                  NULL, &pglob) != 0)
+          {
+            globfree (&pglob);
+            errno = ENOMEM;
+            return NULL;
+          }
+      }
+    else
+#endif
+      {
+        /* Make a copy, to prepare for destructive modifications.  */
+        path_copy = strdup (path);
+        if (path_copy == NULL)
+          return NULL; /* errno is set here */
+      }
 
     #if defined _WIN32 && !defined __CYGWIN__ /* Native Windows */
     bool progname_has_dot = (strchr (progname, '.') != NULL);
     #endif
 
     failure_errno = ENOENT;
-    for (path_rest = path_copy; ; path_rest = cp + 1)
+    for (path_rest = path_copy; ; )
       {
         const char *dir;
         bool last;
@@ -240,34 +262,47 @@ find_in_given_path (const char *progname, const char *path,
         const char *dir_as_prefix;
         size_t i;
 
-        /* Extract next directory in PATH.  */
-        dir = path_rest;
-        for (cp = path_rest; *cp != '\0' && *cp != PATH_SEPARATOR; cp++)
-          ;
-        last = (*cp == '\0');
-        *cp = '\0';
-
-        /* Empty PATH components designate the current directory.  */
-        if (dir == cp)
-          dir = ".";
-
-        /* Concatenate directory and dir.  */
-        if (directory != NULL && IS_RELATIVE_FILE_NAME (dir))
+#ifdef GLOB_PATHS
+        if (use_glob_paths)
           {
-            dir_as_prefix_to_free =
-              concatenated_filename (directory, dir, NULL);
-            if (dir_as_prefix_to_free == NULL)
-              {
-                /* errno is set here.  */
-                failure_errno = errno;
-                goto failed;
-              }
-            dir_as_prefix = dir_as_prefix_to_free;
+            if (glob_idx >= pglob.gl_pathc)
+              break;
+            dir_as_prefix = pglob.gl_pathv[glob_idx++];
+            dir_as_prefix_to_free = NULL;
+            last = (glob_idx >= pglob.gl_pathc);
           }
         else
+#endif
           {
-            dir_as_prefix_to_free = NULL;
-            dir_as_prefix = dir;
+            /* Extract next directory in PATH.  */
+            dir = path_rest;
+            for (cp = path_rest; *cp != '\0' && *cp != PATH_SEPARATOR; cp++)
+              ;
+            last = (*cp == '\0');
+            *cp = '\0';
+
+            /* Empty PATH components designate the current directory.  */
+            if (dir == cp)
+              dir = ".";
+
+            /* Concatenate directory and dir.  */
+            if (directory != NULL && IS_RELATIVE_FILE_NAME (dir))
+              {
+                dir_as_prefix_to_free =
+                  concatenated_filename (directory, dir, NULL);
+                if (dir_as_prefix_to_free == NULL)
+                  {
+                    /* errno is set here.  */
+                    failure_errno = errno;
+                    goto failed;
+                  }
+                dir_as_prefix = dir_as_prefix_to_free;
+              }
+            else
+              {
+                dir_as_prefix_to_free = NULL;
+                dir_as_prefix = dir;
+              }
           }
 
         /* Try all platform-dependent suffixes.  */
@@ -332,6 +367,10 @@ find_in_given_path (const char *progname, const char *path,
                               }
 
                             free (dir_as_prefix_to_free);
+#ifdef GLOB_PATHS
+                            if (use_glob_paths)
+                              globfree (&pglob);
+#endif
                             free (path_copy);
                             return progpathname;
                           }
@@ -386,10 +425,19 @@ find_in_given_path (const char *progname, const char *path,
 
         if (last)
           break;
+
+#ifdef GLOB_PATHS
+        if (!use_glob_paths)
+#endif
+          path_rest = cp + 1;
       }
 
    failed:
     /* Not found in PATH.  */
+#ifdef GLOB_PATHS
+    if (use_glob_paths)
+      globfree (&pglob);
+#endif
     free (path_copy);
 
     errno = failure_errno;
