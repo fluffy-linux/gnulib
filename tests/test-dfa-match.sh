@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # This would fail with grep-2.21's dfa.c.
 
 # Copyright 2014-2026 Free Software Foundation, Inc.

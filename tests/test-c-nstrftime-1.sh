@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 LC_ALL=C ${CHECKER} ./test-c-nstrftime${EXEEXT} || exit 1
 
