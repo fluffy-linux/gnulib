@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test whether a specific UTF-8 locale is installed.
 : "${LOCALE_FR_UTF8=fr_FR.UTF-8}"

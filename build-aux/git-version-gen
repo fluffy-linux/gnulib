@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Print a version string.
 scriptversion=2022-07-09.08; # UTC
 

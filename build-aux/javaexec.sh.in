@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Execute a Java program.
 
 # Copyright (C) 2001-2023 Free Software Foundation, Inc.
