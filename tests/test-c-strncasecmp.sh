@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test in the C locale.
 ${CHECKER} ./test-c-strncasecmp${EXEEXT} || exit 1

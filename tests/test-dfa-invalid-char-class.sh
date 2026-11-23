@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # This use of our DFA-testing helper would fail for grep-2.21.
 
 # Copyright 2014-2026 Free Software Foundation, Inc.

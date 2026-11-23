@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test in the "C" or "POSIX" locale.
 LC_ALL=C \
