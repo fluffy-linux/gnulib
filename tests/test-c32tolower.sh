@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Allow distinguishing the various invocations in the .log file.
 set -x

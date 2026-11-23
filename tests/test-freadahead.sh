@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 ${CHECKER} ./test-freadahead${EXEEXT} 0 < "$srcdir/test-freadahead.sh" || exit 1
 ${CHECKER} ./test-freadahead${EXEEXT} 5 < "$srcdir/test-freadahead.sh" || exit 1

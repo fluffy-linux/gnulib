@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # The name of a specific traditional locale.
 : "${LOCALE_FR=fr_FR}"
