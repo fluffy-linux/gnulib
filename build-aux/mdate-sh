@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Get modification time of a file or directory and pretty-print it,
 # formatted like 1 January 2000.
 

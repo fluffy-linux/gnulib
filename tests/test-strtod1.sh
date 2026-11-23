@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 : "${LOCALE_FR=fr_FR}"
 : "${LOCALE_FR_UTF8=fr_FR.UTF-8}"

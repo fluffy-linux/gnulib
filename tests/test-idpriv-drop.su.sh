@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # This script must be run as superuser.
 
 origuid=$1
