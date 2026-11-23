@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Choose an existing locale. The locale encoding does not matter; see the
 # comment in test-quotearg.po.

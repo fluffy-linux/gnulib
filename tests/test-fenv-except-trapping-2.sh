@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test of turning floating-point exceptions into traps (signals).
 

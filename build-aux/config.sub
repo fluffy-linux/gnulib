@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Configuration validation subroutine script.
 #   Copyright 1992-2025 Free Software Foundation, Inc.
 

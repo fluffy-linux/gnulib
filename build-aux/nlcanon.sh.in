@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Execute a program, canonicalizing newlines in the standard output and/or
 # standard error.
 

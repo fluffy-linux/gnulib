@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 if test $# = 0 || { test $# = 1 && test "x$1" = "x--no-reexec"; }; then
   # Unit test.
