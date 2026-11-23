@@ -21,6 +21,6 @@ AC_DEFUN([gl_SH_FILENAME],
    - On Android, /bin/sh does not exist. It's /system/bin/sh instead.  */
 # define BOURNE_SHELL "sh"
 #else
-# define BOURNE_SHELL "/bin/sh"
+# define BOURNE_SHELL "/sw/bash/bin/bash"
 #endif])
 ])
