@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # A POSIX compliant 'id' program.
 if test -f /usr/xpg4/bin/id; then

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test blocking write() with blocking read().
 ${CHECKER} ./test-nonblocking-socket-main${EXEEXT} ./test-nonblocking-socket-child${EXEEXT} 0 || exit 1
