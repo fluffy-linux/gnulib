@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Show all commands when run with environment variable VERBOSE=yes.
 test -z "$VERBOSE" || set -x

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Prints information for maintaining config.rpath.
 
 # The caller should set the environment variables

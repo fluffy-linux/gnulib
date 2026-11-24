@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # GNU gnulib localizations.
 # This file is in the public domain.
 #
