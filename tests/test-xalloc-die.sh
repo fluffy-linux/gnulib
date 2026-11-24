@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Test suite for xalloc_die.
 # Copyright (C) 2009-2024 Free Software Foundation, Inc.
 # This file is part of the GNUlib Library.

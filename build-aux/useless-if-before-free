@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 #! -*-perl-*-
 
 # Detect instances of "if (p) free (p);".

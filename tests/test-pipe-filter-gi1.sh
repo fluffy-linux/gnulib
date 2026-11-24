@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Find a 'tr' program that supports character ranges in the POSIX syntax.
 # Solaris /usr/bin/tr does not.
