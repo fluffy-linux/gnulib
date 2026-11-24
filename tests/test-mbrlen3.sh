@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test whether a specific EUC-JP locale is installed.
 : "${LOCALE_JA=ja_JP}"

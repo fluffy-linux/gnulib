@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # DO NOT EDIT! GENERATED AUTOMATICALLY!
 
 # Bootstrap this package from checked-out sources.

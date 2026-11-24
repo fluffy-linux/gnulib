@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Unit tests for vc-list-files
 # Copyright (C) 2008-2023 Free Software Foundation, Inc.
 # This file is part of the GNUlib Library.

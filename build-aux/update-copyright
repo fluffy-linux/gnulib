@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 #! -*-perl-*-
 
 # Update an FSF copyright year list to include the current year.
