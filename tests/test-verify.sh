@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 . "${srcdir=.}/init.sh"
 
 # We are not interested in triggering bugs in the compilers and tools

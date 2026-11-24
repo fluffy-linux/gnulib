@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test whether a specific GB18030 locale is installed.
 : ${LOCALE_ZH_CN=zh_CN.GB18030}

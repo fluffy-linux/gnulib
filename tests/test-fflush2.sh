@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Execute the test only with seekable input stream.
 # The behaviour of fflush() on a non-seekable input stream is undefined.

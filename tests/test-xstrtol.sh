@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 : ${srcdir=.}
 . "$srcdir/init.sh"; path_prepend_ .
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Determine the dynamically linked dependencies of a program.
 
 # Copyright (C) 2006-2015 Free Software Foundation, Inc.

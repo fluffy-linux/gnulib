@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test whether a specific Turkish locale is installed.
 : ${LOCALE_TR_UTF8=tr_TR.UTF-8}

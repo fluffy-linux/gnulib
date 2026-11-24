@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Test select() on file descriptors opened for writing.
 
 tmpfiles=""

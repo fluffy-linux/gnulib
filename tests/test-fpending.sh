@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 tmpfile=
 trap 'rm -fr $tmpfile' 1 2 3 15

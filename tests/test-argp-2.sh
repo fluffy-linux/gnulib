@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Test suite for argp.
 # Copyright (C) 2006-2015 Free Software Foundation, Inc.
 # This file is part of the GNUlib Library.

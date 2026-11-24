@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test in the C locale.
 ./test-c-strcasecmp${EXEEXT} || exit 1

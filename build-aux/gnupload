@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Sign files and upload them.
 
 scriptversion=2013-03-19.17; # UTC

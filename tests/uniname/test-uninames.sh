@@ -1,2 +1,2 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 exec ./test-uninames${EXEEXT} "$srcdir/uniname/UnicodeDataNames.txt"

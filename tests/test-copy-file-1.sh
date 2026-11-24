@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test copy-file on the file system of /var/tmp, which usually is a local
 # file system.

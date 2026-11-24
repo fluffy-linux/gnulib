@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test in an ISO-8895-6 locale.
 : ${LOCALE_AR=ar_SA}

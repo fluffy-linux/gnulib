@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 LC_ALL=C ./test-nl_langinfo${EXEEXT} 0 || exit 1
 

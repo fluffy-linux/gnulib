@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Note: This test fails on Cygwin 1.5.x, because the non-blocking flag has
 # apparently no effect on STDOUT_FILENO. It is fixed in Cygwin 1.7.

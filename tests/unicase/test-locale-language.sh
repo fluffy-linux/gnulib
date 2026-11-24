@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 LC_ALL=C                       ./test-locale-language${EXEEXT} '' || exit 1
 
