@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 #! -*-perl-*-
 
 # Rewrite a gnulib.mk, adding prefixes to work with automake's subdir-objects.

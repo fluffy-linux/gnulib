@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # This script is a proper shell script.
 printf 'Halle '
 printf "Potta"

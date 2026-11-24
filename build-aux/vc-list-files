@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # List version-controlled file names.
 
 # Print a version string.

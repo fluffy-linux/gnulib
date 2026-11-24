@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Test suite for exclude.
 # Copyright (C) 2010-2021 Free Software Foundation, Inc.
 # This file is part of the GNUlib Library.

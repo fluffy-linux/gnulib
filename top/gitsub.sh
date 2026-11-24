@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 #
 # Copyright (C) 2019-2021 Free Software Foundation, Inc.
 # Written by Bruno Haible <bruno@clisp.org>, 2019.

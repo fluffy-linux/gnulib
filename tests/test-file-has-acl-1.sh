@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test file-has-acl on the file system of /var/tmp, which usually is a local
 # file system.

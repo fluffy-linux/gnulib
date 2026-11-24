@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test whether a traditional french locale is installed.
 : ${LOCALE_FR=fr_FR}
