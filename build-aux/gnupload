@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Sign files and upload them.
 
 scriptversion=2024-12-09.08; # UTC

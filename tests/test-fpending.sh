@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 tmpfile=
 trap 'rm -fr $tmpfile' HUP INT QUIT TERM
