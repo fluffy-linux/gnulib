@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Test select() on file descriptors opened for reading.
 
 # This test is known to fail on Solaris 2.6 and older, due to its handling

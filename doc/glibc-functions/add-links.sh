@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Adds the reference to the Glibc documentation and to the Linux manual page
 # to the file foo.texi.
 # Usage: add-links.sh foo.texi

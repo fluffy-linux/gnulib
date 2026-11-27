@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 output=`${CHECKER} ./test-at-init${EXEEXT}`
 if test "$output" != 'Initializing...Main...338350...25502500...Finishing...'; then
