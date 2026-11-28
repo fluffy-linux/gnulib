@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Test of the 'verror' module.
 
 . "${srcdir=.}/init.sh"; path_prepend_ .
