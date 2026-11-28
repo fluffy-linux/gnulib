@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Create a temporary directory, much like mktemp -d does.
 
 # Copyright (C) 2007-2022 Free Software Foundation, Inc.

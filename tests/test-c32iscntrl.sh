@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test in the POSIX locale.
 LC_ALL=C     ${CHECKER} ./test-c32iscntrl${EXEEXT} 0 || exit 1

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Test in an ISO-8859-1 or ISO-8859-15 locale.
 : ${LOCALE_FR=fr_FR}
